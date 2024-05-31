@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/company_assign_delivery_boy_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/profile_vector" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/company_assign_delivery_boy_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Nazakat Hussain"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/company_assign_delivery_boy_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="03117213630"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:text="Age"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/company_assign_delivery_boy_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="8 Year"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:text="Vehical"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/company_assign_delivery_boy_vehical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="MotorBike"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:text="Address"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/company_assign_delivery_boy_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="Khushab"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:text="Current Address: "
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/company_assign_delivery_boy_current_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="Khushab"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/company_assign_delivery_boy_assign_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#5DCCFC"
+            android:text="Assign me"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

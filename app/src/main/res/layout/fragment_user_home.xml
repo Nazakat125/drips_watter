@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".UserHome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#3FBDF1"
+            android:paddingLeft="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_proflie_image_data"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile_vector" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/user_greedings_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Welcome Back"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="serif"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/user_name_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Nazakat Hussain"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Balance"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="serif"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/user_balence_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="0000"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp">
+            <RelativeLayout
+                android:id="@+id/rl_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ViewFlipper
+                    android:id="@+id/user_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <!-- First view -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/a11"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/a22"
+                        android:scaleType="fitXY"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/a33"
+                        android:scaleType="fitXY"
+                        />
+
+
+                </ViewFlipper>
+
+
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Companies"
+            android:textColor="#000000"
+            android:fontFamily="serif"
+            android:textSize="18sp"/>
+
+        <GridView
+            android:id="@+id/user_company_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:numColumns="2"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            tools:listitem="@layout/company_list"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

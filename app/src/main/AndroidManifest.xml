@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="Drips Water"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Drips_watter"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserTrackOrder"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryBoyOrdersList"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyAssignDliveryBoy"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryBoyDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyDeleiveryBoyList"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyPriceUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyBottomNavigatinBar"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UserBottomNavigationBar"
+            android:exported="false" />
+        <activity
+            android:name=".deliveryRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryLogin"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyLogin"
+            android:exported="false" />
+        <activity
+            android:name=".UserRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".UserLogIn"
+            android:exported="false" />
+        <activity
+            android:name=".WellcomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBrLWExhd19Jtw3Gg4J3GB71bM9612tvxQ" />
+    </application>
+
+</manifest>

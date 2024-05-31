@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductDetail">
+
+    <LinearLayout
+        android:id="@+id/productDetailWithData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/product_detial"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/watter_back"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/back_arrow"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Drips Spring water"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:textSize="18sp"/>'
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textEnd"
+                android:paddingRight="20dp"
+                android:text="(Available In Stock)"
+                android:textColor="#A39494"
+                android:fontFamily="serif"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+            android:textColor="#000000"
+            android:textSize="14sp"/>'
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Price per liter: "
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:textSize="18sp"/>'
+            <TextView
+                android:id="@+id/watter_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:paddingRight="20dp"
+                android:text="20 RS"
+                android:fontFamily="serif"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/subtract_watter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#5DCCFC"
+                android:src="@drawable/subtract"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/total_watter_liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="3"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:textSize="30sp"/>'
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/add_watter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#5DCCFC"
+                android:src="@drawable/add"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Total: "
+                android:textColor="#000000"
+                android:fontFamily="serif"
+                android:textSize="16sp"/>'
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="20 RS"
+                android:fontFamily="serif"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/watter_place_order"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#5DCCFC"
+            android:text="Place Order"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/productDetailNoData"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/no_data"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

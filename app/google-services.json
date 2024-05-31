@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737834924423",
+    "project_id": "watter-drop",
+    "storage_bucket": "watter-drop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737834924423:android:08854f4b49be7252ec3b22",
+        "android_client_info": {
+          "package_name": "com.example.drips_watter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4dtLPTzZwDWx_MEuRQspAovZ3zDOtP-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
